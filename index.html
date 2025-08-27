@@ -78,21 +78,18 @@
 </head>
 <body>
   <header>
-    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Nvidia_logo.svg" alt="NVIDIA Logo" style="height:60px; margin-bottom: 1rem;"> -->
     <h1>🚀 Advanced Data Science Techniques Using GPUs: A Practical Tutorial</h1>
-    <p style="font-size:1.3rem; margin-bottom:0.5rem;">Welcome to this <strong>eScience 2025</strong> tutorial!<br>Supercharge your data science with GPUs, hands-on learning, and real-world examples.</p>
-    <div style="margin-bottom:1rem;">
-      <!-- <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="GPU Animation" style="height:48px;vertical-align:middle;"> 
-      <img src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif" alt="Data Science Animation" style="height:48px;vertical-align:middle;"> 
-      <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" alt="Computer Science Animation" style="height:48px;vertical-align:middle;"> -->
-    </div>
+    <p>Welcome to the <strong>eScience 2025</strong> tutorial! Dive into the world of GPU-accelerated data science and learn how to supercharge your workflows with cutting-edge tools and hands-on examples.</p>
   </header>
   <main>
     <section class="section">
       <h2>🌟 Overview</h2>
       <ul>
         <li><strong>Event:</strong> eScience 2025</li>
-        <li><strong>Presenter:</strong> <span style="color:#fff;">Didier Barradas Bautista</span></li>
+        <li><strong>Tutorial:</strong> Advanced Data Science Techniques Using GPUs</li>
+        <li><strong>Presenter:</strong> Didier Barradas Bautista</li>
+        <li><strong>Date:</strong> Monday September 15, 2025</li>
+        <li><strong>Location:</strong> Room F</li>
       </ul>
     </section>
     <section class="section">
@@ -103,24 +100,46 @@
         <li><a href="#materials">Tutorial Materials</a></li>
         <li><a href="#resources">Resources</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#outline">Brief Outline of Topics</a></li>
-        <li><a href="#agenda">Detailed Agenda</a></li>
       </ol>
     </section>
     <section class="section" id="introduction">
       <h2>🧑‍💻 Introduction</h2>
-      <p>This tutorial offers a practical exploration of advanced data science techniques using GPUs, focusing on NVIDIA's RAPIDS libraries (cuDF, cuML, cuGraph) and distributed computing with Dask and Skorch. Attendees will learn to leverage these technologies to enhance the performance of machine learning models.</p>
+      <p>This tutorial offers a practical, hands-on exploration of advanced data science techniques powered by modern GPUs. We will dive into the NVIDIA RAPIDS ecosystem—including cuDF for fast dataframe operations, cuML for GPU-accelerated machine learning, and more—demonstrating how these tools can dramatically speed up your workflows compared to traditional CPU-based approaches.</p>
+      <p>You'll also learn how to scale your experiments and optimize models using distributed computing frameworks like Ray-tune and Optuna, as well as deep learning with Skorch. Through interactive notebooks, you'll gain practical experience in:</p>
+      <ul>
+        <li>Accelerating data preprocessing and analysis with GPUs</li>
+        <li>Training and tuning machine learning models at scale</li>
+        <li>Leveraging distributed hyperparameter optimization</li>
+        <li>Integrating RAPIDS with popular Python data science libraries</li>
+      </ul>
+      <p>Whether you're new to GPU computing or looking to take your data science skills to the next level, this tutorial will equip you with the knowledge and tools to harness the full power of GPUs for your research and projects. Get ready to supercharge your data science journey!</p>
     </section>
     <section class="section" id="setup">
       <h2>⚙️ Setup Instructions</h2>
-      <p><em>Coming soon: Instructions for setting up your environment (Google Colab, RAPIDS, Dask, etc.).</em></p>
+      <h3>Using Google Colab</h3>
+      <ol>
+        <li>Click the <strong>Open in Colab</strong> badge next to each notebook above, or open the notebook link directly in Google Colab.</li>
+        <li>Sign in with your Google account if prompted.</li>
+        <li>Go to the menu: <strong>Runtime &gt; Change runtime type</strong>.</li>
+        <li>In the "Hardware accelerator" dropdown, select <strong>GPU</strong> and click <strong>Save</strong>.</li>
+        <li>If the notebook includes a setup cell (for RAPIDS, Optuna, etc.), run it first before running other cells.</li>
+        <li>To save your work, go to <strong>File &gt; Save a copy in Drive</strong>.</li>
+      </ol>
+      <blockquote><strong>Tip:</strong> If you see any errors about missing packages, re-run the setup cell or restart the runtime (Runtime &gt; Restart runtime).</blockquote>
+      <hr>
+      <p>Instructions for setting up your environment locally (RAPIDS, Optuna, etc.) will be provided soon.</p>
     </section>
     <section class="section" id="materials">
       <h2>📂 Tutorial Materials</h2>
       <ul>
-        <li>Hands-on notebooks (coming soon)</li>
-        <li>Example datasets</li>
-        <li>Code samples for GPU-accelerated workflows</li>
+        <li>Hands-on notebooks
+          <ul>
+            <li>Notebook 1: Hyper-parameter Optimization with Sklearn + RAPIDS <a href="https://colab.research.google.com/github/D-Barradas/RAPIDS_HPO/blob/main/notebooks/HPO_cuML.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="height:20px;vertical-align:middle;"/></a></li>
+            <li>Notebook 2: Hyper-parameter Optimization with RayTune + RAPIDS <a href="https://colab.research.google.com/github/D-Barradas/RAPIDS_HPO/blob/main/notebooks/HPO_Ray_RAPIDS.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="height:20px;vertical-align:middle;"/></a></li>
+            <li>Notebook 3: Hyper-parameter Optimization with Skorch + RAPIDS <a href="https://colab.research.google.com/github/D-Barradas/RAPIDS_HPO/blob/main/notebooks/HPO_Skorch_RAPIDS.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="height:20px;vertical-align:middle;"/></a></li>
+          </ul>
+        </li>
+        <li>Code samples for GPU-accelerated workflows in this repository here <a href="https://github.com/D-Barradas/RAPIDS_HPO" target="_blank">GitHub Repository</a></li>
       </ul>
     </section>
     <section class="section" id="resources">
@@ -128,54 +147,20 @@
       <ul>
         <li><a href="https://www.escience-conference.org/2025/" target="_blank">eScience 2025 Conference Website</a></li>
         <li><a href="https://rapids.ai/" target="_blank">NVIDIA RAPIDS</a></li>
-        <li><a href="https://dask.org/" target="_blank">Dask</a></li>
         <li><a href="https://skorch.readthedocs.io/" target="_blank">Skorch</a></li>
+        <li><a href="https://optuna.org/" target="_blank">Optuna</a></li>
+        <li><a href="https://docs.ray.io/en/latest/" target="_blank">Ray</a></li>
         <li><a href="https://pages.github.com/" target="_blank">GitHub Pages Documentation</a></li>
       </ul>
     </section>
     <section class="section" id="contact">
       <h2>📬 Contact</h2>
-      <p>For questions about the tutorial or networking, contact me on <a href="https://github.com/D-Barradas" target="_blank">GitHub </a>or <a href="https://www.linkedin.com/in/didier-barradas-bautista" target="_blank">LinkedIn</a>.</p>
-      <p>For questions about the conferece, contact <a href="https://www.escience-conference.org/2025/organizers" target="_blank">Tutorial Chairs</a>.</p>
+      <p>For questions, contact <a href="https://www.escience-conference.org/2025/organizers" target="_blank">Tutorial Organizer</a>.</p>
     </section>
-    <section class="section" id="outline">
-      <h2>📝 Brief Outline of Topics</h2>
-      <ul>
-        <li><em>Introduction to GPU-accelerated data science</em></li>
-        <li><em>Overview of RAPIDS libraries (cuDF, cuML, cuGraph), and distributed computing libraries (Dask and Skorch)</em></li>
-        <li><em>Hands-on examples and use cases</em></li>
-      </ul>
-    </section>
-    <section class="section" id="agenda">
-      <h2>📅 Detailed Agenda</h2>
-      <ul>
-        <li><em>Introduction and Motivation</em> (40 minutes)
-          <ul>
-            <li>(20 min.) – <strong>Theory</strong> Importance of GPU acceleration in data science</li>
-            <li>(20 min.) – <strong>Theory</strong> Overview of RAPIDS libraries</li>
-          </ul>
-        </li>
-        <li><em>Hands-on with RAPIDS Libraries</em> (1 hour)
-          <ul>
-            <li>(30 min.) – <strong>Hands-On</strong> Data manipulation with cuDF, accelerated pandas and Dask</li>
-            <li>(30 min.) – <strong>Hands-On</strong> GPU-accelerated machine learning with cuML</li>
-          </ul>
-        </li>
-        <li><em>Break</em> (10 minutes)</li>
-        <li><em>Advanced Use Cases and Applications</em> (1 hour)
-          <ul>
-            <li>(10 min.) – <strong>Theory</strong> Introduction Hyperparameter Optimization</li>
-            <li>(25 min.) – <strong>Hands-On</strong> Hyperparameter tuning with Dask-ML</li>
-            <li>(25 min.) – <strong>Hands-On</strong> GPU-accelerated HPO with Skorch</li>
-          </ul>
-        </li>
-        <li><em>Q&amp;A and Wrap-up</em> (10 minutes)</li>
-      </ul>
-    </section>
+    <div class="footer">
+      This page is hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.<br>
+      &copy; 2025 eScience Tutorial
+    </div>
   </main>
-  <div class="footer">
-    This page is hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.<br>
-    &copy; 2025 eScience Tutorial
-  </div>
 </body>
 </html>
