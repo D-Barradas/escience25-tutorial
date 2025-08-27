@@ -11,7 +11,9 @@ Welcome to the **eScience 2025** tutorial! Dive into the world of GPU-accelerate
 - **Event:** eScience 2025
 - **Tutorial:** Advanced Data Science Techniques Using GPUs
 - **Presenter:** Didier Barradas Bautista
-- **Date:** June 2025
+- **Date:** Monday September 15 , 2025
+- **Location:** Room F
+
 
 ## 🗂️ Table of Contents
 
