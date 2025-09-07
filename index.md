@@ -58,7 +58,7 @@ Instructions for setting up your environment locally (RAPIDS, Optuna, etc.) will
 ## 📂 Tutorial Materials
 
 - Hands-on notebooks
-    - [Notebook 1: Hyper-parameter Optimization with Sklearn + RAPIDS](<a href="https://colab.research.google.com/github/D-Barradas/RAPIDS_HPO/blob/main/notebooks/HPO_cuML.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>)
+    - [Notebook 1: Hyper-parameter Optimization with Sklearn + RAPIDS](<a href="https://colab.research.google.com/github/D-Barradas/RAPIDS_HPO/blob/main/notebooks/HPO_Sklearn_RAPIDS.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>)
 
     - [Notebook 2: Hyper-parameter Optimization with RayTune + RAPIDS](<a href="https://colab.research.google.com/github/D-Barradas/RAPIDS_HPO/blob/main/notebooks/HPO_Ray_RAPIDS.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>)
 
